@@ -73,22 +73,27 @@ span {
 /* 動画の欄 */
 .videos{
     display: flex;
+    width: 99%;
+    margin: auto;
     justify-content: center;
 }
 
 .video_insta {
-    width: 300px;
-    height: 300px;
-    /* display: inline-flex; */
-    padding:  30px;
-    margin-right: 25px;
+    /* width: 300px; */
+    width: 33%;
+    /* height: 300px; */
+    padding: 0 12px;
     margin-bottom: 20px;
-    /* display: inline-block; */
+    box-sizing: border-box;
+}
+.video_insta a {
+    width: 100%;
 }
 .video_insta img {
-    width: 250px;
-    height: 250px;
-    /* display: inline-block; */
+    /* width: 250px; */
+    width: 100%;
+    /* height: 250px; */
+
 } 
 
 
@@ -104,4 +109,14 @@ span {
     margin: 25px; 
     padding: 25px 25px;
     text-align: center;
+}
+
+@media screen and (max-width: 770px) {
+    .videos {
+        flex-direction: column;
+    }
+    .video_insta {
+        margin-right: auto;
+        margin-left: auto;
+    }
 }
