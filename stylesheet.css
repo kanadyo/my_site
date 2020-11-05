@@ -1,0 +1,98 @@
+.fadein {
+	opacity : 0;
+	transform : translate(0, 50px);
+	transition : all 500ms;
+	}
+
+/* 画面内に入った状態 */
+.fadein.scrollin {
+	opacity : 1;
+	transform : translate(0, 0);
+	}
+
+body {
+    font-family: "Tsukushi A Round Gothic";
+}
+
+header {
+    background-color: #9790a4;
+    text-align: center;
+    background-color: transparent;
+}
+
+.profile {
+    text-align: center;
+    margin-top: 30px;
+    padding: 50px;
+    background-color: #d3cfd9;
+    border-top: solid 5px#9790a4;
+    border-bottom: solid 5px #9790a4;
+}
+
+h2 {
+    
+    margin-bottom: 30px;
+}
+
+h5 {
+    border-bottom: 3px solid #d3cfd9;
+    width: 100%;
+    margin-left: auto;
+    margin-bottom: 50px;
+}
+
+.col-md-5 {
+    background-color: #d3cfd9;
+    
+}
+
+/* ページトップに戻るやつ */
+.scrollTop {
+    position: fixed;
+    right: 20px;
+    bottom: 30px;
+    opacity: 0;
+    transition: all 0.4s ease-in-out 0s;
+}
+ 
+.scrollTop a {
+    font-size: 18px;
+    color: #fff;
+    background: black;
+    padding: 20px;
+           
+}
+.scrollTop a:hover{
+        background: gray;
+}
+
+
+/* 動画の欄 */
+.video_insta {
+    width: 300px;
+    height: 300px;
+    display: inline-block;      /* インラインブロック要素にする */
+    padding:  30px;             /* 余白指定 */
+    margin-right: 25px;
+    margin-bottom: 20px;
+    display: inline-flex;
+}
+.video_insta img {
+    width: 250px;
+    height: 250px;
+} 
+
+
+.box4{
+    padding: 8px 19px;
+    margin: 2em 0;
+    color: #2c2c2f;
+    background: #d3cfd9;
+    border-top: solid 5px#9790a4;
+    border-bottom: solid 5px #9790a4;
+}
+.box4 p {
+    margin: 25px; 
+    padding: 25px 25px;
+    text-align: center;
+}
