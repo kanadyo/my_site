@@ -40,6 +40,9 @@ h5 {
     margin-left: auto;
     margin-bottom: 50px;
 }
+span {
+    font-size: small;
+}
 
 .col-md-5 {
     background-color: #d3cfd9;
@@ -58,7 +61,7 @@ h5 {
 .scrollTop a {
     font-size: 18px;
     color: #fff;
-    background: black;
+    background: #d3cfd9;
     padding: 20px;
            
 }
@@ -68,18 +71,24 @@ h5 {
 
 
 /* 動画の欄 */
+.videos{
+    display: flex;
+    justify-content: center;
+}
+
 .video_insta {
     width: 300px;
     height: 300px;
-    display: inline-block;      /* インラインブロック要素にする */
-    padding:  30px;             /* 余白指定 */
+    /* display: inline-flex; */
+    padding:  30px;
     margin-right: 25px;
     margin-bottom: 20px;
-    display: inline-flex;
+    /* display: inline-block; */
 }
 .video_insta img {
     width: 250px;
     height: 250px;
+    /* display: inline-block; */
 } 
 
 

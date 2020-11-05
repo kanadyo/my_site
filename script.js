@@ -14,8 +14,6 @@ $(function(){
 
 //   トップページに戻るやつ
   $(document).ready(function() {
-   
- 
     // declare variable
     var scrollTop = $(".scrollTop");
 
@@ -45,20 +43,13 @@ $(function(){
   }); // ready() END
 
 
-  // スムーズスクロール
-  $(function(){
-    // #で始まる出発地点をクリックした場合に処理を実行
-    $('a[href^=#]').click(function() {
-       // 出発地点の値を取得
-       var href= $(this).attr("href");
-       // 到着地点を取得
-       var target = $(href == "#" || href == "" ? 'html' : href);
-       // 到着地点を数値で取得
-       var position = target.offset().top;
-       // スムーススクロール
-       $('body,html').animate({scrollTop:position}, 400, 'swing');
-       return false;
-        });
- });
- 
+//スクロール
+$("#navabout").on('click', function(){
+    const aboutArea = $("#about").offset().top;
+    $(window).scrollTop(aboutArea);
+});
 
+$("#navfavhob").on('click', function(){
+  const eventArea = $("#favhob").offset().top;
+  $(window).scrollTop(eventArea);
+});

@@ -26,16 +26,13 @@
             <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
               <li class="nav-item active">
-                <a class="nav-link text-dark" href="#">About</a>
+                <a class="nav-link text-dark" href="#" id="navabout">About</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link text-dark" href="#">Favorite</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-dark" href="#">Contact</a>
+                <a class="nav-link text-dark" href="#" id="navfavhob">Favorite & Hobby</a>
               </li>
             </ul>
-      </div>
+            </div>
       </nav>
     </header>
     <!-- ↑↑ここまで -->
@@ -46,6 +43,7 @@
     <!-- ここからコンテンツ -->
     <div class="container bg-white py-5 my-5">
       <!-- aboutのところ -->
+    <div id="about">
       <section class="fadein">
         <h2 class="text-center font-weight-bold py-5">About</h2>
       </section>
@@ -60,30 +58,33 @@
           <img class="img-fluid" src="img/IMG_2161.jpeg" alt="">
         </section>
       </div> 
+    </div>
         <section class="profile fadein">
             立道 佳奈　-Tatsumichi Kana-<br>
-            2000.01.11 20歳<br>
+            2000.01.11 20歳 B型<br>
             阿波踊りやスダチ、鳴門の渦潮が有名な徳島県出身<br>
             現在は、琉球大学３年次で観光学を専攻しています<br>
-            
         </section>      
     </div>
       <!-- ここまでabout -->
 
       <!-- ここからfavorite -->
+  <div id="favhob">
     <div class="container bg-white py-5 my-5">
       <section class="fadein">
         <h2 class="text-center font-weight-bold py-5">Favorite & Hobby</h2>
       </section>
       <section class="fadein">
-        <h5 class="my-5 text-left font-weight-bold font-italic 　sample-text1">DANCE</h5>
+        <h5 class="my-5 text-left font-weight-bold font-italic 　sample-text1">DANCE <span>小学4年生から始めたダンスが好き。K-POPの完コピが特技で最近の流行りです</span></h5>
       </section>
+  
       <!-- RFの写真のやつ -->
 
       <div class="d-flex flex-wrap-reverse justify-content-center">
         <section class="col-md-5 col-12 p-0 align-self-center p-4 fadein">
           ダンスサークルに入っています<br>
           学祭で踊ったり、ゆるゆるとしています
+          
         </section>
         <section class="col-md-5 col-12 align-self-center h-250 fadein">
           <img class="rounded img-fluid" src="img/IMG_8936.jpeg" alt="...">
@@ -98,11 +99,14 @@
           大学で出会い意気投合した5人組でたま〜に踊っています<br>
           チーム名は「我等」. 一癖あるチーム名なので、覚えやすい（？）
         </section>
+      </div>
+  </div>
         <!-- 動画の欄 -->
-      <div class="content">
+      <div class= "container bg-white py-5 my-5 videoEdit">
         <section class="fadein">
           <h5 class="my-5 text-right font-weight-bold font-italic sample-text1">Video Editing</h5>
         </section>
+        <div class="videos">
         <section class="box video_insta fadein">
           <a href="https://www.instagram.com/p/BsrclcaBp5N/"><img src="img/IMG_5897.jpg"></a>
         </section>
@@ -112,6 +116,7 @@
         <section class="video_insta fadein">
           <a href="https://www.instagram.com/p/B5Vcis-ls8f/"><img src="img/IMG_5898.jpg"></a>
         </section>
+      </div>
         <section class="box4 fadein">
           <p>
             旅行に行った時や、楽しかったことなどを思い出としてまとめて<br>
@@ -120,13 +125,6 @@
           </p>
         </section>
     </div> 
-    <!-- コンタクトフォーム -->
-    <div class="container bg-white py-5 my-5">
-      <section class="fadein">
-        <h2 class="text-center font-weight-bold py-5">Contact</h2>
-      </section>
-    </div>
-    
 
     <!-- ページトップに戻るやつ -->
     <div id="stop" class="scrollTop">
